@@ -1,0 +1,21 @@
+<%= form_for(@pup) do |f| %>
+  <% if @pup.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@pup.errors.count, "error") %> prohibited this pup from being saved:</h2>
+
+      <ul>
+      <% @pup.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.text_field :description, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit class: "btn btn-primary" %>
+  </div>
+<% end %>
