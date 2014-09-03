@@ -5,5 +5,8 @@
   <%= @pup.description %>
 </p>
 
+<% if @pup.user == current_user %>
 <%= link_to 'Edit', edit_pup_path(@pup) %> |
+<% end %>
 <%= link_to 'Back', pups_path %>
+
