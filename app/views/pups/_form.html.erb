@@ -1,4 +1,4 @@
-<%= form_for(@pup) do |f| %>
+<%= form_for @pup, html: { multipart: true } do |f| %>
   <% if @pup.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@pup.errors.count, "error") %> prohibited this pup from being saved:</h2>
@@ -10,6 +10,9 @@
       </ul>
     </div>
   <% end %>
+  <div class="form-group">
+    <%= f.label :description %>
+    <%= f.file_field :description, class: "form-control" %>
 
   <div class="form-group">
     <%= f.label :description %>
