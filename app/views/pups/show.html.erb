@@ -1,12 +1,20 @@
-<%= image_tag @pup.image.url(:medium) %>
-
-<p>
-  <strong>Description:</strong>
-  <%= @pup.description %>
-</p>
-
-<% if @pup.user == current_user %>
-<%= link_to 'Edit', edit_pup_path(@pup) %> |
-<% end %>
 <%= link_to 'Back', pups_path %>
 
+<div class="row">
+  <div class="col-md-offset-2 col-md-8">
+    <div class="panel panel-default">
+      <div class="panel-heading center">
+        <%= image_tag @pup.image.url(:medium) %>
+      </div>
+      <div class="panel-body">
+        <p><%= @pup.description %></p>
+        <p><strong><%= @pup.user.email if @pup.user %></strong></p>
+
+        <% if @pup.user == current_user %>
+         <%= link_to 'Edit', edit_pup_path(@pup) %>
+        <% end %>
+
+      </div>
+    </div>
+  </div>
+</div>
