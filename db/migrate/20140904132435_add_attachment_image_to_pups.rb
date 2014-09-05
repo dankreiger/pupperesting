@@ -8,4 +8,5 @@ class AddAttachmentImageToPups < ActiveRecord::Migration
   def self.down
     remove_attachment :pups, :image
   end
+
 end
