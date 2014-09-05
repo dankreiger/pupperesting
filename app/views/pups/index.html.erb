@@ -1,32 +1,18 @@
-<h1>Listing pups</h1>
+<div id="pups" class="transitions-enabled">
+  <% @pups.each do |pup| %>
+    <div class="box panel panel-default">
+        <%= image_tag pup.image.url(:medium) %>
+        <div class="panel-body">
+          <%= pup.description %>
+          <%= pup.user.email if pup.user %>
+          <%= link_to 'Show', pup_path(pup) %>
+          <% if pup.user == current_user %>
+            <%= link_to 'Edit', edit_pup_path(pup) %>
+            <%= link_to 'Destroy', pup, method: :delete, data: { confirm: 'Are you sure?' } %>
+          <% end %>
+      </div>
+    </div>
+  <% end %>
+</div>
 
-<table>
-  <thead>
-    <tr>
-      <th>Description</th>
-      <th>User</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
 
-  <tbody>
-    <% @pups.each do |pup| %>
-      <tr>
-        <td><%= image_tag pup.image.url(:medium) %></td>
-        <td><%= pup.description %></td>
-        <td><%= pup.user.email if pup.user %></td>
-        <td><%= link_to 'Show', pup_path(pup) %></td>
-        <% if pup.user == current_user %>
-        <td><%= link_to 'Edit', edit_pup_path(pup) %></td>
-        <td><%= link_to 'Destroy', pup, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-        <% end %>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<% if user_signed_in? %>
-  <%= link_to 'New Pup', new_pup_path %>
-<% end %>
