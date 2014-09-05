@@ -7,6 +7,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
+gem 'jquery-turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
@@ -17,6 +18,7 @@ gem 'paperclip', '~> 4.2'
 gem 'rmagick', '2.13.2'
 gem 'rghost', '~> 0.9.5'
 gem 'aws-sdk', '~> 1.20.0'
+gem 'masonry-rails', '~> 0.2.0'
 
 group :development, :test do 
 	gem 'sqlite3'
