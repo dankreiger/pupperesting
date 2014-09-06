@@ -22,6 +22,6 @@ module Pupperesting
 
     # Required for Bootstrap 3
     config.assets.paths << "#{Rails}/vendor/assets/fonts"
-
+    config.serve_static_assets = true
   end
 end
