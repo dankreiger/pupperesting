@@ -1,3 +1,5 @@
+<%= render 'pages/home' unless user_signed_in? %>
+
 <div id="pups" class="transitions-enabled">
   <% @pups.each do |pup| %>
     <div class="box panel panel-default">
@@ -7,8 +9,14 @@
         <strong><%= pup.user.email if pup.user %></strong>
         <% if pup.user == current_user %>
           <div class="actions">
-            <%= link_to 'Edit', edit_pup_path(pup) %>
-            <%= link_to 'Destroy', pup, method: :delete, data: { confirm: 'Are you sure?' } %>
+            <%= link_to edit_pup_path(pup) do %>
+              <span class="glyphicon glyphicon-edit"></span>
+              Edit
+            <% end %>
+            <%= link_to pup, method: :delete, data: { confirm: 'Are you sure?' } do %>
+              <span class="glyphicon glyphicon-trash"></span>
+              Delete
+            <% end %>
           </div>
         <% end %>
       </div>
