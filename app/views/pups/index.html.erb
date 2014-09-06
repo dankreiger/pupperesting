@@ -7,7 +7,7 @@
       <div class="panel-body">
         <%= pup.description %><br/>
         <strong><%= pup.user.name if pup.user %></strong>
-        <% if pup.user == current_user %>
+        <% if current_user && pup.user == current_user %>
           <div class="actions">
             <%= link_to edit_pup_path(pup) do %>
               <span class="glyphicon glyphicon-edit"></span>
