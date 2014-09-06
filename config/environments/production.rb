@@ -33,7 +33,10 @@ Rails.application.configure do
   config.assets.digest = true
 
   # `config.assets.precompile` has moved to config/initializers/assets.rb
-
+  
+  # gem sprockets_better_errors 0.0.4
+  config.assets.raise_production_errors = true
+  
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   # config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
