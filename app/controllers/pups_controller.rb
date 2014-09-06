@@ -4,7 +4,7 @@ class PupsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-    @pups = Pup.all
+   @pups = Pup.all.order("created_at DESC")
   end
 
   def show
