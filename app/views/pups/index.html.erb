@@ -6,7 +6,7 @@
       <%= link_to image_tag(pup.image.url(:medium)), pup %>
       <div class="panel-body">
         <%= pup.description %><br/>
-        <strong><%= pup.user.email if pup.user %></strong>
+        <strong><%= pup.user.name if pup.user %></strong>
         <% if pup.user == current_user %>
           <div class="actions">
             <%= link_to edit_pup_path(pup) do %>
