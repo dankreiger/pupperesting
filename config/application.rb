@@ -22,6 +22,8 @@ module Pupperesting
 
     # Required for Bootstrap 3
     config.assets.paths << "#{Rails}/vendor/assets/fonts"
-    config.serve_static_assets = true
+    
+    # Required for Heroku
+    config.assets.initialize_on_precompile = false
   end
 end

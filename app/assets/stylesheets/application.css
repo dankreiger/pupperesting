@@ -11,7 +11,7 @@
  * file per style scope.
  *
  *= require bootstrap
- *= require_self
- *= require 'masonry/transitions'
  *= require_tree .
+ *= require 'masonry/transitions'
+ *= require_self
  */

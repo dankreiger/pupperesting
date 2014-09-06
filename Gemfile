@@ -19,14 +19,9 @@ gem 'rmagick', '2.13.2'
 gem 'rghost', '~> 0.9.5'
 gem 'aws-sdk', '~> 1.20.0'
 gem 'masonry-rails', '~> 0.2.0'
-gem 'sprockets_better_errors'
 
 group :development, :test do 
 	gem 'sqlite3'
-end
-
-group :development do
-  gem 'rails_layout'
 end
 
 group :production do
