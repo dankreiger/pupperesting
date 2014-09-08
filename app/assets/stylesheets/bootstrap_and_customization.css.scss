@@ -1,11 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
+@import url(http://fonts.googleapis.com/css?family=Oswald:400);
+@import url(http://fonts.googleapis.com/css?family=Finger+Paint);
 
-$body-bg:                                                   #ecf0f1;
+$body-bg:                                                   #e9eaec;
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                                        45px;
 $navbar-default-bg:                          white;
-$navbar-default-brand-color:      #c0392b;
-$brand-primary:                                    #c0392b;
+$navbar-default-brand-color:      #BC9A5F;
+$brand-primary:                                    #BC9A5F;
 $jumbotron-bg:                                         white;
 
 @import "bootstrap-sprockets";
@@ -17,4 +19,28 @@ $jumbotron-bg:                                         white;
 
 .navbar-brand {
      font-weight: bold;
+     font-family: 'Finger Paint', cursive;
+
+}
+
+h1 {
+	padding: 10px
+}
+
+h1 .woof {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #262321;
+}
+
+h1 .guau {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #262321;
+}
+
+h1 .wau {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 400;
+	color: #262321;
 }
