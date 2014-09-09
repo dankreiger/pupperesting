@@ -5,17 +5,17 @@
     <div class="box panel panel-default">
       <%= link_to image_tag(pup.image.url(:medium)), pup %>
       <div class="panel-body">
-        <%= pup.description %><br/>
-        <strong><%= pup.user.name if pup.user %></strong>
+        <div class="user_post_descriptions">
+          <%= pup.description %><br/>
+          <strong><%= pup.user.name if pup.user %></strong>
+        </div>
         <% if current_user && pup.user == current_user %>
           <div class="actions">
             <%= link_to edit_pup_path(pup) do %>
               <span class="glyphicon glyphicon-edit"></span>
-              Edit
             <% end %>
             <%= link_to pup, method: :delete, data: { confirm: 'Are you sure?' } do %>
               <span class="glyphicon glyphicon-trash"></span>
-              Delete
             <% end %>
           </div>
         <% end %>

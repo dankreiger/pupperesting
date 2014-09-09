@@ -1,7 +1,12 @@
-<div class="panel panel-default">
+<div class="jumbotron center">
+
   <div class="panel-heading">
     <div class="panel-title">
-      <h1>Edit <%= resource_name.to_s.humanize %></h1>
+      <div class="pupfile">
+        <h1>Pupfile</h1>
+      </div>
+<!--       <h1>Edit <%= resource_name.to_s.humanize %> Pupfile</h1>
+ -->    
     </div>
   </div>
   <div class="panel-body">
@@ -19,12 +24,12 @@
       </div>
 
       <div class="form-group">
-        <%= f.label :password %> <i>(leave blank if you don't want to change it)</i>
+        Change <%= f.label :password %></br><i><small>(leave blank if you don't want to change it)</small></i>
         <%= f.password_field :password, class: "form-control", :autocomplete => "off" %>
       </div>
 
       <div class="form-group">
-        <%= f.label :current_password %> <i>(we need your current password to confirm your changes)</i>
+          <%= f.label :current_password %></br><i><small>(we need your current password to confirm your changes)</small></i>
         <%= f.password_field :current_password, class: "form-control" %>
       </div>
 
@@ -34,10 +39,11 @@
     <% end %>
   </div>
   <div class="panel-footer">
-    <h3>Cancel my account</h3>
+    <h3>Tail not wagging?</h3>
 
-    <p>Unhappy? <%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-warning" %></p>
+    <p><%= button_to "Cancel my account", registration_path(resource_name), :data => { :confirm => "Are you sure?" }, :method => :delete, class: "btn btn-warning" %></p>
 
     <%= link_to "Back", :back %>
   </div>
+
 </div>

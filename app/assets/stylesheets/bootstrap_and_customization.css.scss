@@ -6,33 +6,144 @@ $body-bg:                                                   rgb(245,248,251);
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                                        45px;
 $navbar-default-bg:                          rgba(1,1,1,.5);
-$navbar-default-brand-color:      rgb(199,141,71);
+$navbar-default-brand-color:      #efffff;
 $brand-primary:                                    rgb(199,141,71);
+$brand-warning: rgb(199,141,71);
 $jumbotron-bg:                                         rgba(0,0,0,.5);
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+h1 {
+	padding: 3px;
+	font-family: 'Oswald', sans-serif;
+}
+
+
 .center {
      text-align: center;
 }
 
-.navbar-brand {
-     font-weight: bold;
-     font-family: 'Finger Paint', cursive;
+.panel-body, label {
+	font-family: 'Finger Paint', cursive;
+	color: #000001;
+}
+
+.actions a { 
+	text-decoration: none;
+	color: rgb(199,141,71);
+}
+
+.glyphicon.glyphicon-edit {
+	float: left;
+	color: rgb(199,141,71);
+}
+
+.glyphicon.glyphicon-edit:hover {
+	float: left;
+	color: rgb(170,141,71);
+}
+
+.glyphicon.glyphicon-trash {
+	float: right;
+	color: rgb(199,141,71);
+}
+
+.glyphicon.glyphicon-trash:hover {
+	float: right;
+	color: rgb(170,141,71);
+}
+
+.box.panel.panel-default.masonry-brick {
+	background-color: rgba(255,255,255,.85);
+	border-color: rgba(0,0,0,.5);
+}
+.form-group {
+	color: #efffff;
+}
+.form-control, input[type="text"], {
+  background-color: rgba(255,255,255,.85); 
 
 }
 
+.form-control, input[type="file"], {
+  border-color: rgb(199,141,71);
+
+}
+
+.user_post_descriptions {
+	text-align: center;
+}
+
+
+.navbar-brand {
+  font-weight: bold;
+  font-family: 'Finger Paint', cursive;
+
+}
+
+#bs-example-navbar-collapse-1 a {
+	color: #efffff;
+}
+
+#bs-example-navbar-collapse-1 a:hover {
+ // color: #32673f;
+ color: #ffef99;
+}
+
+
 body {
-	background: url('pup.jpg');
+	background: url('wau.jpg');
 	/* Full Page Background Receipe */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 }
 
-h1 {
-	padding: 10px
+.panel-title {
+	font-family: 'Finger Paint', cursive;
+}
+
+.about {
+	font-family: 'Oswald', sans-serif;	
+	color: #efffff;
+}
+
+.pupdate, h1 {
+	color: rgb(199,141,71);
+	margin-top: -20px;
+}
+
+.pupfile, h1, h2 {
+	color: #efffff;
+	font-family: 'Oswald', cursive;
+}
+.panel-heading {
+	font-family: 'Oswald', sans-serif;
+	color: #efffff;
+}
+
+.wauwau_about {
+	font-family: 'Finger Paint', cursive;
+}
+
+.new_pup {
+	font-family: 'Oswald', sans-serif;	
+	color: #efffff;
+}
+
+.form-control, input {
+	font-family: 'Finger Paint', cursive;
+	color: rgb(199,141,71)
+}
+
+
+label, i {
+	color: #efffff;
+}
+
+#pup_image {
+	color: rgb(199,141,71);
 }
 
 h1 .woof {
@@ -51,4 +162,26 @@ h1 .wau {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	color: #ffa500;
+}
+
+.panel-footer {
+	background-color: rgba(255,255,255,.85);
+	font-family: 'Oswald', sans-serif;
+}
+
+
+.panel-footer a {
+	text-decoration: none;
+}
+
+@media screen and (min-width: 660px) {
+
+	body {
+		background: url('pup.jpg');
+		/* Full Page Background Receipe */
+	  background-size: cover;
+	  background-position: center;
+	  background-attachment: fixed;
+	}
+
 }
