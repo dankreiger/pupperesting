@@ -24,7 +24,8 @@
       </div>
 
       <div class="form-group">
-        Change <%= f.label :password %></br><i><small>(leave blank if you don't want to change it)</small></i>
+        <span class="change">
+        Change </span><%= f.label :password %></br><i><small>(leave blank if you don't want to change it)</small></i>
         <%= f.password_field :password, class: "form-control", :autocomplete => "off" %>
       </div>
 
