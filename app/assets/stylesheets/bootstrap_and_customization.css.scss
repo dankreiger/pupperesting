@@ -5,10 +5,10 @@
 $body-bg:                                                   rgb(245,248,251);
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                                        45px;
-$navbar-default-bg:                          white;
+$navbar-default-bg:                          rgba(1,1,1,.5);
 $navbar-default-brand-color:      rgb(199,141,71);
 $brand-primary:                                    rgb(199,141,71);
-$jumbotron-bg:                                         white;
+$jumbotron-bg:                                         rgba(0,0,0,.5);
 
 @import "bootstrap-sprockets";
 @import "bootstrap";
@@ -23,6 +23,14 @@ $jumbotron-bg:                                         white;
 
 }
 
+body {
+	background: url('pup.jpg');
+	/* Full Page Background Receipe */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 h1 {
 	padding: 10px
 }
@@ -30,17 +38,17 @@ h1 {
 h1 .woof {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
-	color: #262321;
+	color: gold;
 }
 
 h1 .guau {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
-	color: #262321;
+	color: #aaa;
 }
 
 h1 .wau {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
-	color: #262321;
+	color: #ffa500;
 }
