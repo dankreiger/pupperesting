@@ -11,6 +11,7 @@ $brand-primary:                                    rgb(199,141,71);
 $brand-warning: rgb(199,141,71);
 $jumbotron-bg:                                         rgba(0,0,0,.5);
 
+
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
@@ -28,7 +29,7 @@ h1 {
 	font-family: 'Finger Paint', cursive;
 	color: #000001;
 }
-
+ 
 .actions a { 
 	text-decoration: none;
 	color: rgb(199,141,71);
@@ -58,17 +59,23 @@ h1 {
 	background-color: rgba(255,255,255,.85);
 	border-color: rgba(0,0,0,.5);
 }
-.form-group {
-	color: #efffff;
-}
-.form-control, input[type="text"], {
+
+// .form-group {
+// 	color: #efffff;
+// }
+
+.form-control input[type="text"], {
   background-color: rgba(255,255,255,.85); 
 
 }
 
-.form-control, input[type="file"], {
+.form-control input[type="file"], {
   border-color: rgb(199,141,71);
 
+}
+
+.checkbox_only {
+	margin-left: -12%;
 }
 
 .user_post_descriptions {
@@ -84,6 +91,7 @@ h1 {
 
 #bs-example-navbar-collapse-1 a {
 	color: #efffff;
+
 }
 
 #bs-example-navbar-collapse-1 a:hover {
@@ -109,6 +117,7 @@ body {
 	color: #efffff;
 }
 
+
 .pupdate, h1 {
 	color: rgb(199,141,71);
 	margin-top: -20px;
@@ -118,6 +127,7 @@ body {
 	color: #efffff;
 	font-family: 'Oswald', cursive;
 }
+
 .panel-heading {
 	font-family: 'Oswald', sans-serif;
 	color: #efffff;
@@ -142,6 +152,8 @@ label, i {
 	color: #efffff;
 }
 
+
+
 #pup_image {
 	color: rgb(199,141,71);
 }
@@ -164,8 +176,14 @@ h1 .wau {
 	color: #ffa500;
 }
 
-.panel-footer {
-	background-color: rgba(255,255,255,.85);
+.panel.panel-default, .panel-heading {
+	color: white;
+	
+}
+
+
+.panel.panel-default, .panel-footer {
+	background-color: rgba(0,0,0,.5);
 	font-family: 'Oswald', sans-serif;
 }
 
