@@ -2,12 +2,12 @@
 @import url(http://fonts.googleapis.com/css?family=Oswald:400);
 @import url(http://fonts.googleapis.com/css?family=Finger+Paint);
 
-$body-bg:                                                   #02020f;
+$body-bg:                                                   rgb(245,248,251);
 $font-family-sans-serif:                'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $navbar-height:                                        45px;
-$navbar-default-bg:                          #0012bf;
-$navbar-default-brand-color:      #239487;
-$brand-primary:                                    #32987b;
+$navbar-default-bg:                          white;
+$navbar-default-brand-color:      rgb(199,141,71);
+$brand-primary:                                    rgb(199,141,71);
 $jumbotron-bg:                                         white;
 
 @import "bootstrap-sprockets";
