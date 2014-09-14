@@ -15,6 +15,15 @@ $jumbotron-bg:                                         rgba(0,0,0,.5);
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+* {
+	cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat977.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat977.gif), progress !important;
+}
+
+
+body a:hover {
+	cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat970.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat970.gif), progress !important; 
+}
+
 h1 {
 	padding: 3px;
 	font-family: 'Oswald', sans-serif;
@@ -114,6 +123,10 @@ body {
   background-position: center;
   background-attachment: fixed;
 }
+
+body, a:hover {
+  cursor: url(http://cur.cursors-4u.net/nature/nat-10/nat977.ani), url(http://cur.cursors-4u.net/nature/nat-10/nat977.gif), progress !important;
+} 
 
 .panel-title {
 	font-family: 'Finger Paint', cursive;
