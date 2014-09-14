@@ -186,22 +186,37 @@ h3 {
 	color: rgb(199,141,71);
 }
 
-h1 .woof {
+h1 .woof a {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
-	color: gold;
+	color: #ffd700;
+	text-decoration: none;
 }
 
-h1 .guau {
+h1 .guau a {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	color: #aaa;
+	text-decoration: none;
 }
 
-h1 .wau {
+h1 .wau a {
 	font-family: 'Oswald', sans-serif;
 	font-weight: 400;
 	color: #ffa500;
+	text-decoration: none;
+}
+
+h1 .woof a:hover {
+	color: #ecc90d;
+}
+
+h1 .guau a:hover {
+	color: #c5bfbf;
+}
+
+h1 .wau a:hover {
+	color: #e7990a;
 }
 
 .panel.panel-default, .panel-heading {
