@@ -99,6 +99,13 @@ h1 {
  color: #ffef99;
 }
 
+.hover_pup:hover {
+
+    -moz-box-shadow: 1px 1px 1px #000000;
+		-webkit-box-shadow: 1px 1px 1px #000000;
+		box-shadow: 1px 1px 1px #000000;
+
+}
 
 body {
 	background: url('wau.jpg');
@@ -154,6 +161,12 @@ label, i {
 
 h3 {
 	color: #efffff;
+}
+
+.box.panel.panel-default.masonry-brick:hover {
+	-moz-box-shadow: 1px 1px 1px #b4b4b5;
+	-webkit-box-shadow: 1px 1px 1px #b4b4b5;
+	box-shadow: 1px 1px 1px #b4b4b5;
 }
 
 #pup_image {
