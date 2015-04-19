@@ -4,7 +4,8 @@ class PupsController < ApplicationController
   before_action :authenticate_user!, except: [:index, :show]
 
   def index
-   @pups = Pup.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 8)
+    @pups = Pup.all.order("created_at DESC").paginate(:page => params[:page], :per_page => 8)
+
   end
 
   def show
