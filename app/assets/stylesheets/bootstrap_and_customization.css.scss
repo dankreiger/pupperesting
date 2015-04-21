@@ -29,6 +29,21 @@ h1 {
 	font-family: 'Oswald', sans-serif;
 }
 
+.panel.panel-default {
+  width: 75%;
+  text-align: center;
+  margin: 0 auto;
+	background-color: rgba(255,255,255,0.9);
+	border-radius: 3%;
+}
+
+img {
+  border-radius: 3%;
+}
+
+.panel-body {
+  background-color: rgba(255,255,255,0.9);
+}
 
 .center {
      text-align: center;
