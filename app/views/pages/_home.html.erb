@@ -1,8 +1,10 @@
 <div class="jumbotron center">
     <h1>
-    	<span class="woof"><a href="https://www.youtube.com/watch?v=cXSUQcQcxqY" alt="welpe bellt">Woof.</a></span>
-    	<span class="guau"><a href="https://www.youtube.com/watch?v=1PrRjMnaMX4" alt="perrito ladrando">Guau.</a></span>
-    	<span class="wau"><a href="https://www.youtube.com/watch?v=PpBU3DhU_pQ" alt="welpe bellt">Wau.</a></span></h1>
+    	<span class="woof"><%= link_to "Woof", "https://www.youtube.com/watch?v=cXSUQcQcxqY", alt: "Puppy barking", target: "_blank" %></span>
+    	<span class="guau" target="_blank"><%= link_to "Guau", "https://www.youtube.com/watch?v=1PrRjMnaMX4", alt: "Perrito ladrando", target: "_blank" %></span>
+    	<span class="wau"><%= link_to "Wau", "https://www.youtube.com/watch?v=PpBU3DhU_pQ", alt: "Welpe bellt", target: "_blank" %></span>
+    </h1>
+    
      <p>
        <%= link_to "Log in", new_user_session_path, class: "btn btn-default btn-lg" %>
        <%= link_to "Sign up", new_user_registration_path, class: "btn btn-primary btn-lg" %>
