@@ -13,7 +13,7 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
-gem 'devise', '~> 3.3.0'
+gem 'devise'
 gem 'paperclip', '~> 4.2'
 gem 'rmagick', '2.13.2'
 gem 'rghost', '~> 0.9.5'
