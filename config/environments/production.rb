@@ -87,8 +87,7 @@ Rails.application.configure do
 
   # Note to set this to your actual host
   # Required for Heroku
-  config.action_mailer.default_url_options = { :host => 'pupperesting.herokuapp.com' }
-  config.action_mailer.default_url_options = { host: 'pupperesting.com', port: 3000 }
+  config.action_mailer.default_url_options = { :host => 'www.pupperesting.herokuapp.com' }
 
   # Sets Paperclip to upload images to Amazon S3
   config.paperclip_defaults = {
