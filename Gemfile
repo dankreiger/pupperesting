@@ -14,7 +14,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'devise'
-gem 'paperclip', '~> 4.2'
+gem 'paperclip', '~> 5.0'
 gem 'rmagick', '2.13.2'
 gem 'rghost', '~> 0.9.5'
 gem 'aws-sdk', '~> 1.20.0'
