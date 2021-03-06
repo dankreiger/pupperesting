@@ -18,3 +18,9 @@
 /public/system/*
 .env
 Procfile
+
+
+# Ignore precompiled javascript packs
+/public/packs
+/public/packs-test
+/public/assets
