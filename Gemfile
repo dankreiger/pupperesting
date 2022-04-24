@@ -15,7 +15,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'spring',        group: :development
 gem 'devise'
 gem 'paperclip', '~> 4.2'
-gem 'rmagick', '2.13.2'
+gem 'rmagick', '4.2.5'
 gem 'rghost', '~> 0.9.5'
 gem 'aws-sdk', '~> 1.20.0'
 gem 'masonry-rails', '~> 0.2.0'
